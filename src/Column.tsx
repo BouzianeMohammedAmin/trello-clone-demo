@@ -1,17 +1,17 @@
-import { CardContainer, ColumnContainer, ColumnTitle } from "./styles";
+import { Card } from "./Card";
+import { ColumnContainer, ColumnTitle } from "./styles";
 
 type ColumnProps = {
-    text: string; 
-}
+  text: string;
+};
 
-export  const  Column = ({text} : ColumnProps) =>{
+export const Column = ({ text }: ColumnProps) => {
   return (
-      <ColumnContainer>
-          <ColumnTitle>{text}</ColumnTitle>
-          <CardContainer>First Container </CardContainer>
-          <CardContainer>Sacend Container </CardContainer>
-          <CardContainer>third Container </CardContainer>
-      </ColumnContainer>
-      
-  )
-}
+    <ColumnContainer>
+      <ColumnTitle>{text}</ColumnTitle>
+      <Card text="First Container" />
+      <Card text="Second Container" />
+      <Card text="Third Container" />
+    </ColumnContainer>
+  );
+};
