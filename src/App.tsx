@@ -1,11 +1,15 @@
+import { AddNewItem } from "./AddNewItem";
 import { Column } from "./Column";
-import { AppContainer   } from "./styles";
+import { AppContainer } from "./styles";
 
- 
-export  function App() {
+export function App() {
   return (
     <AppContainer>
       <Column text="Hello"></Column>
-     </AppContainer>
-  )
+      <AddNewItem
+        toggleButtonText="+ Add another List  "
+        onAdd={() => console.log("On add items ")}
+      />
+    </AppContainer>
+  );
 }
