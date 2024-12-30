@@ -36,7 +36,7 @@ export const CardContainer = styled.div`
 `;
 
 type AddItemButtonProps = {
-  dark?: boolean;
+  dark?: string;
 };
 
 export const AddItemButton = styled.button<AddItemButtonProps>`
